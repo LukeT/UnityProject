@@ -4,7 +4,7 @@ using System.Collections;
 public class scrStartScreenHover : MonoBehaviour {
 
 	void OnMouseOver() {
-		GetComponent<Renderer> ().material.color = Color.black;
+		GetComponent<Renderer> ().material.color = Color.yellow;
 	}
 
 	void OnMouseExit()

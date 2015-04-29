@@ -5,6 +5,6 @@ public class scrStartGame : MonoBehaviour {
 
 	void OnMouseDown()
 	{
-		Application.LoadLevel ("MainLevel");
+		Application.LoadLevel ("scnMainLevel");
 	}
 }
