@@ -7,6 +7,8 @@ namespace UnityStandardAssets._2D
     [RequireComponent(typeof (PlatformerCharacter2D))]
     public class Platformer2DUserControl : MonoBehaviour
     {
+		static public bool enabled = false;
+
         private PlatformerCharacter2D m_Character;
         private bool m_Jump;
 
@@ -26,7 +28,9 @@ namespace UnityStandardAssets._2D
 
         private void FixedUpdate()
         {
-			m_Character.Move (0.4f, false, m_Jump);
+			if (enabled) {
+				m_Character.Move (0.4f, false, m_Jump);
+			}
             m_Jump = false;
 
        }
