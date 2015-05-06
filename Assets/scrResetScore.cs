@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Reset the score
+/// </summary>
 public class scrResetScore : MonoBehaviour {
 
-	// Use this for initialization
+	/// <summary>
+	/// Reset the score.
+	/// </summary>
 	void Start () {
 		scrUpdateCounter.resetScore();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 }
